@@ -15,3 +15,10 @@ Learning how to add the new repository from local to git
 
 6.  Upstream means the actual remote repo to which your changes have to be pushed when "git push" is used. - In short you can use git push -u origin master
 7.  Your changes will be pushed.
+
+Note:
+While using the above step 5 if you see permission denied then follow typing the below commands
+
+1. eval "$(ssh-agent -s)" - This will start the ssh agent
+2. ssh-add ~/keyfile - This will add the private key which will start the ssh connection between our local repo and the git
+3. Then "git push -u origin master" will push the changes to the remote repo
