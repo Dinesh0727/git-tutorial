@@ -70,12 +70,7 @@ Git branching is used to create a new version of the master branch and the chang
 
 To check the diff in the git bash terminal itself we can use:
 
-<<<<<<< HEAD
                 git diff <branch-name>
-=======
-            git diff <branch-name>
-
->>>>>>> refs/remotes/origin/master
 
 Here the branch-name is the branch with which we want to compare the changes.
 
@@ -134,7 +129,6 @@ Solving thee changes when the merge conflicts are in less number of files is eas
     d. To revert the changes anf delete the changes
 
                  git rest --hard <commit-hash>
-<<<<<<< HEAD
 
 # Miscellaneous
 
@@ -145,5 +139,3 @@ Solving thee changes when the merge conflicts are in less number of files is eas
 2.  To change the recent commit description
 
                 git commit --amend
-=======
->>>>>>> refs/remotes/origin/master
