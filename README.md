@@ -22,3 +22,9 @@ While using the above step 5 if you see permission denied then follow typing the
 1. eval "$(ssh-agent -s)" - This will start the ssh agent
 2. ssh-add ~/keyfile - This will add the private key which will start the ssh connection between our local repo and the git
 3. Then "git push -u origin master" will push the changes to the remote repo
+
+Branches:
+Git branching is used to create a new version of the master branch and the changes we make in it are not reflected on master branch. Commands useful:
+
+1. git checkout -b <branch-name> - to create a new branch and move to that from existing branch
+2. git branch - to view all the branches that are available
