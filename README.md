@@ -1,4 +1,4 @@
-# Demo
+# Introduction
 
 Learning how to add the new repository from local to git
 
@@ -23,11 +23,16 @@ While using the above step 5 if you see permission denied then follow typing the
 2. ssh-add ~/keyfile - This will add the private key which will start the ssh connection between our local repo and the git
 3. Then "git push -u origin master" will push the changes to the remote repo
 
-Branches:
+# Branches:
+
 Git branching is used to create a new version of the master branch and the changes we make in it are not reflected on master branch. Commands useful:
 
 1. git checkout -b <branch-name> - to create a new branch and move to that from existing branch
 2. git branch - to view all the branches that are available
+
+To check the diff in the git bash terminal itself we can use:
+git diff <branch-name>  
+Here the branch-name is the branch with which we want to compare the changes.
 
 When our changes are done, to get it reviewed we usually try to merge the changes with master but we do it through pull request.
 
