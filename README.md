@@ -41,7 +41,10 @@ Git branching is used to create a new version of the master branch and the chang
 2. git branch - to view all the branches that are available
 
 To check the diff in the git bash terminal itself we can use:
-git diff <branch-name>  
+
+            git diff <branch-name>
+
+
 Here the branch-name is the branch with which we want to compare the changes.
 
 When our changes are done, to get it reviewed we usually try to merge the changes with master but we do it through pull request.
@@ -62,24 +65,37 @@ When our changes are done, to get it reviewed we usually try to merge the change
 Note:
 Solving thee changes when the merge conflicts are in less number of files is easy. But when the changes are in many files this becomes tough. To solve this there is one method, which has to be followed before you stage your changes:
 
-1. If we want to push the changes to a temporary stack and remove them from your branch.
-   git stash push
-2. To get the new head changes from the remote repository. Now all the changes from the remote head will be in your branch
-   git pull --rebase
-3. To get back the recent changes we pushed to the local stack
-   git stash apply
+1.  If we want to push the changes to a temporary stack and remove them from your branch.
+
+                git stash push
+
+2.  To get the new head changes from the remote repository. Now all the changes from the remote head will be in your branch
+
+                git pull --rebase
+
+3.  To get back the recent changes we pushed to the local stack
+    git stash apply
 
 # Reverting staging and committing
 
-1. If we want to reset the staged changes
-   git reset
-2. If we want to revert the latest commit and unstage the changes
-   git reset HEAD~1
-3. If we want to revert the changes until to specific past commit
-   a. To check the logs
-   git log
-   b. Copy the commit hashwhich we want the commits to be deleted from.
-   c. To just revert the commits and unstage them
-   git reset <commit-hash>
-   d. To revert the changes anf delete the changes
-   git rest --hard <commit-hash>
+1.  If we want to reset the staged changes
+
+                git reset
+
+2.  If we want to revert the latest commit and unstage the changes
+
+                git reset HEAD~1
+
+3.  If we want to revert the changes until to specific past commit
+    a. To check the logs
+
+                 git log
+
+    b. Copy the commit hashwhich we want the commits to be deleted from.
+    c. To just revert the commits and unstage them
+
+                 git reset <commit-hash>
+
+    d. To revert the changes anf delete the changes
+
+                 git rest --hard <commit-hash>
